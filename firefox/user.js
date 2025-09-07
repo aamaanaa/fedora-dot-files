@@ -241,7 +241,7 @@ user_pref("browser.urlbar.weather.featureGate", true); // [FF108+] [DEFAULT: fal
 user_pref("browser.urlbar.clipboard.featureGate", false); // [FF118+] [DEFAULT: true FF125+]
 user_pref("browser.urlbar.yelp.featureGate", false); // [FF124+] [DEFAULT: false]
 
-/user_pref("browser.urlbar.suggest.engines", false);
+user_pref("browser.urlbar.suggest.engines", false);
 
 // PREF: do not autoplay media audio
 // [NOTE] You can set exceptions under site permissions
@@ -543,7 +543,7 @@ user_pref("security.certerrors.mitm.auto_enable_enterprise_roots", false);
 // [1] https://github.com/chromium/content_analysis_sdk
 // [2] https://bugzilla.mozilla.org/show_bug.cgi?id=1880314
 user_pref("browser.contentanalysis.enabled", false); // [FF121+] [DEFAULT]
-user_pref("browser.contentanalysis.default_result", 0; // [FF127+] [DEFAULT]
+user_pref("browser.contentanalysis.default_result", 0); // [FF127+] [DEFAULT]
 
 // PREF: display warning on the padlock for "broken security"
 // [NOTE] Warning padlock not indicated for subresources on a secure page! [2]
@@ -894,7 +894,7 @@ user_pref("browser.safebrowsing.provider.google.updateURL", "");
 // [SETTING] Privacy & Security>Security>... "Block dangerous downloads"
 user_pref("browser.safebrowsing.downloads.enabled", false); // all checks happen locally
 
-/ PREF: disable SB checks for downloads (remote)
+// PREF: disable SB checks for downloads (remote)
 // To verify the safety of certain executable files, Firefox may submit some information about the
 // file, including the name, origin, size and a cryptographic hash of the contents, to the Google
 // Safe Browsing service which helps Firefox determine whether or not the file should be blocked.
